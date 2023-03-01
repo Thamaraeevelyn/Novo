@@ -1,0 +1,86 @@
+* {
+    font-family: 'Dosis', sans-serif;
+    overflow: hidden;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, #7EE7EE, #E0BCF3, #FEBFFF, #C2F0FF);
+    background-size: 300%;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    animation: colors 9s ease infinite;
+}
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body .container {
+    width: 600px;
+    height: 100vh;
+    border-radius: 12px;
+    align-items: center;
+    backdrop-filter:blur(20px) 
+    brightness(113%);
+    height: fit-content;
+    padding: 40px;
+    gap: 10px;
+
+}
+
+body h1 {
+    color: #E0BCF3;
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: #000;
+}
+
+body form section textarea {
+    height: 10em; 
+    /*  rows  */
+    width: 20em;
+    /* cols */
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 13px;
+}
+
+/*  display none se nenhuma opção estiver marcada */
+body form section .incremento {
+    display: none;
+}
+
+body form section .mensagem-usuario {
+    display: column;
+}
+
+
+body form button {
+    color: white;
+    font-size: 18px;
+    background-color: #d397f3;
+    border-radius: 12px;
+    border: transparent;
+    width: 200px;
+    height: 8vh;
+    cursor: pointer;
+    
+}
+
+body form button:hover {
+    background-color: black;
+    cursor: pointer;
+    border: transparent;
+}
+
+
+

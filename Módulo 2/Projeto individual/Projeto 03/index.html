@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="./main.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+
+  <title>Mensagem Oculta</title>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div>
+        <h1>Encoder & Decoder</h1>  
+      </div>
+    </header>
+  
+    <main>
+      <section>
+        <div>
+          <form action="">
+            <h2>Condifique sua mensagem</h1>
+      
+            <select name="select" id="options">
+              <option value="option" selected>Escolha sua opção</option>
+              <option value="base64">Base 64</option>
+              <option value="cesar">Cifra de César</option>
+            </select>
+            
+            <div class="steps" id="steps">
+              <label for="">Número de Passos:</label>
+              <input class="rangeStyle" type="range" id="rangeIn" min="1" max="25" value="1">
+              <output id="result">1</output>
+            </div>
+      
+            <div class="radio">
+              <input type="radio" name="choice" value="codificar" id="encode">
+              <label for="choice">Codificar</label>
+              <input type="radio" name="choice" value="decodificar" id="decode">
+              <label for="choice">Descodificar</label> 
+            </div>
+            
+            <div class="textarea">
+              <textarea name="message" id="intext" cols="25" rows="10" placeholder="Digite aqui"></textarea>
+              <textarea name="message" id="outext" cols="25" rows="10" placeholder="Resultado" readonly></textarea>
+            </div>
+              
+          </form>
+      
+          <button type="button" id="codify">Codificar</button>
+        </div>
+
+      </section>
+  
+    </main>
+
+  </div>
+  
+</body>
+</html>

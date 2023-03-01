@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    <title>Codidicador E Decodificador</title>
+</head>
+
+<body>
+    <header> 
+        
+        <img src="./icone.png" class= "logo" alt="chave">
+        <h1>Cifra de Cezar & Base 64</h1> </header>
+    <main>
+
+            <div class="container">
+                <label for="titulo" class= "escolha">Escolha seu decodificador</label>
+                <div>
+                    <select id="escolhas">
+                        <option value="valor0" id="valor0" disabled selected>Escolha</option>
+                        <option value="base" id="base">Base 64</option>
+                        <option value="caesar" id="caesar">Cifra de Cezar</option>
+                    </select>
+                    <br />
+    
+                    <!-- Quando o style display está em "none" não aparece no html -->
+                    <div class="caesar" style="display: none;" id="numero">
+                        <p>Escolha o Número de Chave</p>
+                        <input id="passo" type="namber" default="0" min="1" value="1" />
+                    </div>
+
+                <fieldset>
+                <label for="radio"> Codificar </label>
+                <input type ="radio" name="radio" class="radio" id="cod1">
+                <label> Decodificar </label>
+                <input type ="radio" name="radio" class="radio" id="cod2">
+                </fieldset>
+
+                
+                
+                <label id="mensagemCodificada"for="mensagem">Mensagem para Codificar</label>
+                <input type="text" id="mensagem">
+
+                <label id="mensagemDecodificada"for="resultado">Resultado Codificado</label>
+                <textarea id="resultado"></textarea>
+
+                <button class="btnResultado" onclick="btn()">Executar</button>
+
+            </div>
+        </div>  
+    </main>
+
+    <footer class= "rodapé">
+        <h4>Todos os direitos reservados © 2022 Resilia | Senac. by Thamara</h4>
+    </footer>
+
+    <script src="./global.js"></script>
+    <script src="./base64.js"></script>
+    <script src="./cezar.js"></script>   
+</body>
+
+</html>

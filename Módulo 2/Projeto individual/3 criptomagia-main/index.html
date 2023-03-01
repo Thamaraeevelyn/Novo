@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--  fonte -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- /fonte -->
+    <link rel="icon" href="./assets/icon.png">
+    <script src="script.js" defer></script>
+    <title>Criptomagia</title>
+</head>
+<body>
+    <!-- HEADER -->
+ <header>
+     
+
+ </header>
+    <!-- FORM  -->
+        <form action="" class="container">
+            <h1 class="titulo">CRIPTOMAGIA</h1>
+            <p>Criptografia em um passe de mágica</p>
+
+            <section class="escolha">
+                
+                <!-- : base64 ou cifra -->
+                <select name="codigo" id="codigo">
+                    <option value="tipoDeCodigo" disabled selected>Selecione a opção</option>
+                    <option value="caesarCipher">Cifra de César</option>
+                    <option value="base64">Base64</option>
+                </select>
+                
+                    <!--  incremento caso cifra de cesar  -->
+                <input class="incremento" id="incremento" type="number" min="1" max="25" placeholder="Número de passos">
+                <div class="metodo">
+                    
+                    <!-- radio button: codificar ou decodificar -->
+                    <input type="radio" id="encode" name="escolhaDeMetodo" value="encode">
+                    <label for="escolhaDeMetodo">Codificar</label>
+                </div>
+                <div class="metodo">
+                    <input type="radio" id="decode" name="escolhaDeMetodo" value="decode">
+                    <label for="escolhaDeMetodo">Decodificar</label>
+                </div>
+            </section>
+            
+            <!-- ENTRADA DO USUÁRIO -->
+
+            <section class="mensagem-usuario">
+                <textarea class="texto" id="inputDoUsuario" name="mensagem" placeholder="Sua mensagem"></textarea>
+                <textarea class="texto1" id="outputDaMensagem" name="resultado" placeholder= "Resultado" readonly></textarea>
+            
+                <!-- readonly -> box apenas para resultado -->
+            </section>
+            
+            <button type="button" id="magica">Codificar ou decodificar</button>
+            <button type="button" id="botaoReset">RESET</button>
+
+
+        </form>
+    </div>
+
+
+</body>
+</html>
