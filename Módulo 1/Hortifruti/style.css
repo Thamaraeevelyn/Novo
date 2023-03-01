@@ -1,0 +1,163 @@
+  body {
+    background-image: url("./img/imagemdefundo.jpg");
+    background-size: cover; 
+
+} 
+
+* { 
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: brown;
+    padding: 80px;
+}
+
+h1{
+    color: blanchedalmond;    
+    text-align: center; 
+    font-family: 'Titillium Web', sans-serif;
+    
+}
+
+nav{
+    padding-left: 5px;
+}
+
+.link{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.link:hover{
+    padding: 20px;
+}
+
+.cont-1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 100px;
+        flex-wrap: wrap;
+        gap: 15px;
+        font-family: cursive
+}
+
+.cont-2{
+        margin: 100px;
+        justify-content: center;
+        color: brown;
+        background-color: floralwhite;
+        background-attachment: scroll;
+        font-family: cursive; 
+        padding-left: 10px;
+        border-radius: 10px;
+      
+               
+}
+
+.Topo{ 
+       display: flex;
+       justify-content: center;
+       background-color: brown;
+       color: floralwhite;
+       font-family: cursive
+       
+
+}
+.Nome{ 
+       justify-content: flex-start;
+       color: brown;
+       font-family: cursive;
+}
+.Sobrenome{ 
+            justify-content: flex-start;
+            color: brown;
+            font-family: cursive           
+}
+
+.Email{   
+          justify-content: flex-start;
+          color: brown;
+          font-family: cursive
+     
+}
+.Sobrevc{ 
+          justify-content: flex-start;
+          color: brown;
+          font-family: cursive;
+          margin-bottom: 10px;
+}
+
+.caixa{ margin-inline-start: 100px;
+
+}
+
+.botao{ margin-bottom: 10px;
+
+
+}
+.foto{  width: 80px;
+        border-radius: 80px;
+
+}
+
+.sobre-mim{ font-size: 1.5rem;
+
+}
+
+ul{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-around;
+        list-style: none;
+        flex-wrap: wrap;
+        gap: 30px;
+
+}
+
+li{ background-color: darkviolet;
+    padding: 10px 5px;
+    border-radius: 12px;
+}
+
+li:hover{
+    padding: 20px 10px;
+}
+
+
+.item {
+    color: gainsboro;
+}
+
+footer{
+    background-color: blueviolet;
+    margin-top: 200px;
+    padding: 10px 0;
+
+}
+
+.footer{
+    color: #fff;
+    text-align: center;
+} 
+
+@media(max-width: 580px) {
+    .link{
+        font-size: 1rem,
+    }
+}
+
+a {
+ font-family: fantasy;
+ color: white;
+}
